@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Tic Tac Toe With Friends</string>
+    <string name="playerX">Scores: </string>
+    <string name="playerY">Scores: </string>
+    <string name="restartGame">Reset Board</string>
+    <string name="xTurn">X Turn</string>
+    <string name="yTurn">O Turn</string>
+    <string name="resetScore">Reset Score</string>
+    <string name="quote">Are you up for Challenge!</string>
+    <string name="single_player">Single Player</string>
+    <string name="quit">Exit</string>
+    <string name="back">Back</string>
+    <string name="option">Option</string>
+    <string name="startNow">Start Now</string>
+    <string name="enter_player2_name">Enter O Player Name</string>
+
+    <string name="enter_player1_name">Enter X Player Name</string>
+    <string name="player_1">Player 1</string>
+    <string name="player_2">Player 2</string>
+    <string name="multiplayer">Multiplayer</string>
+    <string name="about_note">
+        This game is made for the course "Basics of Android" by
+        \nKaunain Nesar
+        \nkaunainnesar26@gmail.com
+    </string>
+
+    <string name="cancel">Cancel</string>
+    <string name="ok">Register</string>
+    <string name="please_register">Please register!!</string>
+    <string name="enter_you_email_and_password_for_registration">Enter you email and password for registration</string>
+
+
+</resources>

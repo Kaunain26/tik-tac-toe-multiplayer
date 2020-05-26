@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/gameActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/woods"
+    android:orientation="vertical"
+
+    tools:context=".OnlineGameActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/playerX_Score"
+            android:layout_width="wrap_content"
+            android:layout_height="43dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/player_x_button_shape"
+            android:text="@string/playerX"
+            android:textAllCaps="false"
+            android:textColor="#ffffff"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/playerY_Score"
+            app:layout_constraintHorizontal_bias="0.298"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.318" />
+
+        <Button
+            android:id="@+id/playerY_Score"
+            android:layout_width="wrap_content"
+            android:layout_height="43dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="11dp"
+            android:layout_marginRight="11dp"
+            android:background="@drawable/player_y_button"
+            android:text="@string/playerY"
+            android:textAllCaps="false"
+            android:textColor="#ffffff"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.871"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.318" />
+
+        <TextView
+            android:id="@+id/yTurnTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:fontFamily="cursive"
+            android:textColor="#3F51B5"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/xTurnTextView"
+            app:layout_constraintHorizontal_bias="0.26"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/playerX_Score"
+            app:layout_constraintVertical_bias="0.275" />
+
+        <TextView
+            android:id="@+id/xTurnTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="cursive"
+            android:textColor="#F32140"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.85"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/playerY_Score"
+            app:layout_constraintVertical_bias="0.487" />
+
+        <TextView
+            android:id="@+id/xPlayerNameText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textColor="#3F51B5"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/playerX_Score"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.191"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.681" />
+
+        <TextView
+            android:id="@+id/yPlayerNameText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textColor="#F32140"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/playerY_Score"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.688"
+            app:layout_constraintStart_toEndOf="@+id/xPlayerNameText"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.681" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="-16dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button00"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="30dp"
+            android:layout_weight="1"
+            android:background="@drawable/buttons_shape"
+            android:onClick="btnOnClick" />
+
+        <Button
+            android:id="@+id/button01"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="30dp"
+            android:layout_weight="1"
+            android:background="@drawable/buttons_shape"
+            android:onClick="btnOnClick" />
+
+        <Button
+            android:id="@+id/button02"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="30dp"
+            android:layout_weight="1"
+            android:background="@drawable/buttons_shape"
+            android:onClick="btnOnClick" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="-15dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button10"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="30dp"
+            android:layout_weight="1"
+            android:background="@drawable/buttons_shape"
+            android:onClick="btnOnClick" />
+
+        <Button
+            android:id="@+id/button11"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="30dp"
+            android:layout_weight="1"
+            android:background="@drawable/buttons_shape"
+            android:onClick="btnOnClick" />
+
+        <Button
+            android:id="@+id/button12"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="30dp"
+            android:layout_weight="1"
+            android:background="@drawable/buttons_shape"
+            android:onClick="btnOnClick" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lastLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="-43dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="35dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button20"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="30dp"
+            android:layout_weight="1"
+            android:background="@drawable/buttons_shape"
+            android:onClick="btnOnClick" />
+
+        <Button
+            android:id="@+id/button21"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="30dp"
+            android:layout_weight="1"
+            android:background="@drawable/buttons_shape"
+            android:onClick="btnOnClick" />
+
+        <Button
+            android:id="@+id/button22"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="30dp"
+            android:layout_weight="1"
+            android:background="@drawable/buttons_shape"
+            android:onClick="btnOnClick" />
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_marginTop="20dp">
+
+        <!--        <Button-->
+        <!--            android:id="@+id/resetButton"-->
+        <!--            android:layout_width="150dp"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_gravity="right"-->
+        <!--            android:layout_marginBottom="70dp"-->
+        <!--            android:layout_weight="2"-->
+        <!--            android:background="@drawable/button_states"-->
+        <!--            android:text="@string/restartGame"-->
+        <!--            android:textAllCaps="false"-->
+        <!--            android:textColor="#0A0A0A"-->
+        <!--            android:textSize="18sp"-->
+        <!--            android:textStyle="bold|italic" />-->
+
+        <mehdi.sakout.fancybuttons.FancyButton
+            android:id="@+id/resetScore"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/button_states"
+            android:onClick="goBack"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textAllCaps="false"
+            android:textStyle="italic"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.163"
+            fancy:fb_borderColor="#FFFFFF"
+            fancy:fb_borderWidth="2dp"
+            fancy:fb_defaultColor="#b80009"
+            fancy:fb_focusColor="#d8232f"
+            fancy:fb_iconPosition="left"
+            fancy:fb_radius="30dp"
+            fancy:fb_text="Back"
+            fancy:fb_textColor="#FFFFFF"
+            fancy:fb_textFont="fonts/zorque.ttf" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

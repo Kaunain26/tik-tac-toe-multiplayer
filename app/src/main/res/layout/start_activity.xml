@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:background="@drawable/hdpi_start_background"
+    android:gravity="center_horizontal|center_vertical"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/textView"-->
+    <!--        android:layout_width="273dp"-->
+    <!--        android:layout_height="93dp"-->
+    <!--        android:layout_marginTop="250dp"-->
+    <!--        android:fontFamily="cursive"-->
+    <!--        android:gravity="center"-->
+    <!--        android:text="@string/quote"-->
+    <!--        android:textColor="#ffffff"-->
+    <!--        android:textSize="20sp"-->
+    <!--        android:textStyle="bold" />-->
+
+    <mehdi.sakout.fancybuttons.FancyButton
+        android:id="@+id/btn_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="400dp"
+        android:onClick="StartGame"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="10dp"
+        fancy:fb_borderColor="#FFFFFF"
+        fancy:fb_borderWidth="1dp"
+        fancy:fb_defaultColor="#b80009"
+        fancy:fb_focusColor="#d8232f"
+        fancy:fb_iconPosition="left"
+        fancy:fb_radius="30dp"
+        fancy:fb_text="Single Player"
+        fancy:fb_textColor="#FFFFFF"
+        fancy:fb_textFont="fonts/zorque.ttf" />
+
+    <mehdi.sakout.fancybuttons.FancyButton
+        android:id="@+id/btn_online"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:onClick="StartGameOnline"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="10dp"
+        fancy:fb_borderColor="#FFFFFF"
+        fancy:fb_borderWidth="1dp"
+        fancy:fb_defaultColor="#b80009"
+        fancy:fb_focusColor="#d8232f"
+
+        fancy:fb_iconPosition="left"
+        fancy:fb_radius="30dp"
+        fancy:fb_text="@string/multiplayer"
+        fancy:fb_textColor="#FFFFFF"
+        fancy:fb_textFont="fonts/zorque.ttf"
+        fancy:fb_textSize="16sp" />
+
+    <mehdi.sakout.fancybuttons.FancyButton
+        android:id="@+id/btn_about"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:onClick="ShowAboutNote"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="10dp"
+        fancy:fb_borderColor="#FFFFFF"
+        fancy:fb_borderWidth="1dp"
+        fancy:fb_defaultColor="#b80009"
+        fancy:fb_focusColor="#d8232f"
+
+        fancy:fb_iconPosition="left"
+        fancy:fb_radius="30dp"
+        fancy:fb_text="About"
+        fancy:fb_textColor="#FFFFFF"
+        fancy:fb_textFont="fonts/zorque.ttf"
+        fancy:fb_textSize="16sp" />
+
+
+    <mehdi.sakout.fancybuttons.FancyButton
+        android:id="@+id/btn_exit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:onClick="EndGame"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="10dp"
+        fancy:fb_borderColor="#FFFFFF"
+        fancy:fb_borderWidth="1dp"
+        fancy:fb_defaultColor="#b80009"
+        fancy:fb_focusColor="#d8232f"
+        fancy:fb_iconPosition="left"
+        fancy:fb_radius="30dp"
+        fancy:fb_text="Exit"
+        fancy:fb_textColor="#FFFFFF"
+        fancy:fb_textFont="fonts/zorque.ttf"
+        fancy:fb_textSize="16sp" />
+
+
+</LinearLayout>
+

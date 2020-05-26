@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_centerHorizontal="true"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="350dp"
+        android:layout_height="310dp"
+        android:layout_centerInParent="true">
+
+
+        <Button
+            android:id="@+id/backButton"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="120dp"
+            android:background="@drawable/red_colour"
+            android:text="@string/back" />
+
+        <Button
+            android:id="@+id/okButton"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="9dp"
+
+            android:background="@drawable/green_button"
+            android:text="@string/ok" />
+
+        <RelativeLayout
+            android:layout_width="350dp"
+            android:layout_height="250dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/blue_button_shape">
+
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:paddingLeft="10dp"
+                android:text="@string/please_register"
+                android:textColor="#006400"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:fontFamily="cursive"
+                android:paddingLeft="10dp"
+                android:text="@string/enter_you_email_and_password_for_registration"
+                android:textColor="#ffffff"
+                android:textSize="19sp" />
+
+            <EditText
+
+                android:id="@+id/etEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="90dp"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="20dp"
+                android:textColor="#ffffff"
+                android:textColorHint="#ffffff" />
+
+            <EditText
+                android:id="@+id/etPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="140dp"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:paddingLeft="20dp"
+                android:textColor="#ffffff"
+                android:textColorHint="#ffffff" />
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+</RelativeLayout>
